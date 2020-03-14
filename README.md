@@ -1,2 +1,0 @@
-# lyjStudy
-study
