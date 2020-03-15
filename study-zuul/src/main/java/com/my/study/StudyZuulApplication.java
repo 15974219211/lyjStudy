@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Primary;
 
 
 //http://localhost:7070/actuator/routes 查看所有路由规则
+
 @SpringBootApplication
 @EnableZuulProxy
 //@EnableZuulServer
@@ -21,6 +22,7 @@ public class StudyZuulApplication {
         SpringApplication.run(StudyZuulApplication.class,args);
     }
 
+    //动态刷新配置
     @Bean
     @RefreshScope
     @ConfigurationProperties("zuul")

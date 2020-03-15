@@ -15,7 +15,7 @@ import java.util.List;
 
 @Slf4j
 @Service
-@Scope(proxyMode = ScopedProxyMode.INTERFACES)
+//@Scope(proxyMode = ScopedProxyMode.INTERFACES)
 public class StudyRestTemplateServiceImpl implements StudyRestTemplateService {
 
 

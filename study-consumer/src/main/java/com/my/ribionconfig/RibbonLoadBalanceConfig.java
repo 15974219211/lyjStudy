@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 public class RibbonLoadBalanceConfig {
 
 //    @RibbonClientName
-    private String name = "micro-order";
+    private String name = "study-producer";
 
     @Bean
     @ConditionalOnClass

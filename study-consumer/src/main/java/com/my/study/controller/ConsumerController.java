@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Collections;
 import java.util.List;
 
 @Slf4j
@@ -26,14 +27,13 @@ public class ConsumerController {
     @Autowired
     Environment environment;
 
-    @RequestMapping("/test ")
-    public List<ConsultContent> templateService(HttpServletRequest request) {
+    @RequestMapping("/template")
+    public List<ConsultContent> hghgh(HttpServletRequest request) {
         log.info("==================已经调用==========" + request.getRemotePort());
         log.info("Environment======username======" + environment.getProperty("username"));
-
-        return studyRestTemplateService.queryContents();
+        List<ConsultContent> consultContents = studyRestTemplateService.queryContents();
+        return consultContents;
     }
-
 
     @RequestMapping("/feignService")
     public List<ConsultContent> feignService(HttpServletRequest request) {

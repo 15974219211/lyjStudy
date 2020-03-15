@@ -12,6 +12,9 @@ import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Enumeration;
 import java.util.List;
 
 @RefreshScope
@@ -41,7 +44,22 @@ public class ProduceController {
     private Producer producer;
 
     @RequestMapping("/queryContent")
-    public List<ConsultContent> queryContent() {
+    public List<ConsultContent> queryContent(HttpServletRequest request) {
+
+        Cookie[] cookies = request.getCookies();
+
+        if(cookies != null) {
+            for (int i = 0; i < cookies.length; i++) {
+                log.info("cookie name = >" + cookies[i].getName() + "= >" + "cookie value = " + cookies[i].getValue());
+            }
+        }
+        Enumeration<String> headerNames = request.getHeaderNames();
+        while(headerNames.hasMoreElements()) {
+            String headername = headerNames.nextElement();
+            log.info("header name = >" + headername + "= >" + "headervalue = " + request.getHeader(headername));
+        }
+
+
 
         producer.send();
         log.info("本程序的端口------>>" + port);
