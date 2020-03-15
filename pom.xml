@@ -15,6 +15,8 @@
         <module>study-config-server</module>
         <module>study-springboot</module>
         <module>study-zuul</module>
+        <module>study-admin</module>
+        <module>study-Thread</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -53,6 +55,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>2.2.2</version>
         </dependency>
     </dependencies>
 
