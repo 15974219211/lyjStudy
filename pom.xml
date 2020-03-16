@@ -17,6 +17,7 @@
         <module>study-zuul</module>
         <module>study-admin</module>
         <module>study-Thread</module>
+        <module>study-Spring</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
@@ -61,6 +62,7 @@
             <artifactId>spring-boot-admin-starter-client</artifactId>
             <version>2.2.2</version>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>
