@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 @Slf4j
-public class StringHelper {
+public class StringToListHelper {
 
     private static final Pattern NUMBER_PATTERN = Pattern.compile("([,0-9a-zA-Z_]*)");
 

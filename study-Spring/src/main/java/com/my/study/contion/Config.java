@@ -17,7 +17,7 @@ public class Config {
 	@Bean("windows") //bean在容器中的ID为windows
 	public User windows(){
 		System.out.println("给容器中添加windows.......");
-		return new User("Lison",58);
+		return new User("windows",58);
 	}
 	@Conditional(LinCondition.class)
 	@Bean("linux")//bean在容器中的ID为linux
