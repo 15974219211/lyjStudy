@@ -18,6 +18,10 @@
         <module>study-admin</module>
         <module>study-Thread</module>
         <module>study-Spring</module>
+        <module>study-dubbo-provider</module>
+        <module>study-dubbo-consumer</module>
+        <module>study-producer-security</module>
+        <module>study-common-utils</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

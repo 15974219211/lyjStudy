@@ -1,13 +1,15 @@
 package com.my.study.dao;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
 import com.my.study.entity.ConsultContent;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 
-public interface ConsuilContentMapper extends BaseMapper<ConsultContent> {
+//extends BaseMapper<ConsultContent>
+public interface ConsuilContentMapper {
 
 
-    List<ConsultContent> findAll123();
+    List<ConsultContent> findConsultContent();
 }

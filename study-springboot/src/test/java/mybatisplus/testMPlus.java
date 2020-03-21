@@ -1,9 +1,6 @@
 package mybatisplus;
 
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.my.study.StudySpringboot;
 import com.my.study.dao.ConsuilContentMapper;
 import com.my.study.entity.ConsultContent;
@@ -26,7 +23,7 @@ public class testMPlus {
     @Autowired
     private ConsultContentService consultContentService;
 
-    @Test
+   /* @Test
     public void test1() {
         //传空查所有
         List<ConsultContent> consultContents = consuilContentMapper.selectList(null);
@@ -53,11 +50,11 @@ public class testMPlus {
         IPage<ConsultContent> consultContentIPage = consuilContentMapper.selectPage(consultContentPage, wrapper);
         consultContentIPage.getRecords().forEach(System.out::println);
 
-    }
+    }*/
 
-    @Test
+  /*  @Test
     public void tes4() {
         List<ConsultContent> list = consultContentService.list();
         list.forEach(System.out::println);
-    }
+    }*/
 }
