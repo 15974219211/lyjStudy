@@ -14,7 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@EnableConfigurationProperties(DruidConfig.class)//使用@ConfigurationProperties要手动开启
 public class StudySpringboot {
 
-
+//ConfigurationClassPostProcessor
     public static void main(String[] args) {
         SpringApplication.run(StudySpringboot.class,
                 args);

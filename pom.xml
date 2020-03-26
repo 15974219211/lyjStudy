@@ -23,6 +23,7 @@
         <module>study-producer-security</module>
         <module>study-common-utils</module>
         <module>study-rabbit</module>
+        <module>study-redis</module>
     </modules>
     <packaging>pom</packaging>
     <properties>

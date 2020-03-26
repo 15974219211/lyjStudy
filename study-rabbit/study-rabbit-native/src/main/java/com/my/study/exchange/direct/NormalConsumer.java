@@ -25,7 +25,7 @@ public class NormalConsumer {
         //在信道中设置交换器
         channel.exchangeDeclare(DirectProducer.EXCHANGE_NAME,BuiltinExchangeType.DIRECT);
 
-        //申明队列（放在消费者中去做）
+        //申明队列
         String queueName="queue-king-direct-1";
         channel.queueDeclare(queueName,false,false,false,null);
 

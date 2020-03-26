@@ -1,13 +1,13 @@
-package com.my.study.contion;
+package com.my.study.beanDefinition;
 
+import com.my.study.contion.Config;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class test {
 
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(Config.class);
+        AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(BeanDefinitionTest.class);
         String[] beanDefinitionNames = app.getBeanDefinitionNames();
         for(String name:beanDefinitionNames){
             System.out.println(name);

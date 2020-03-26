@@ -4,7 +4,7 @@ package com.my.study.transefer;
 
 import java.util.Random;
 /**
- *安全转账1
+ *安全转账2
  */
 public class SafeOperateTwo implements ITransfer {
 

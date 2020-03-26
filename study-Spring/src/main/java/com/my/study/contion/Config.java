@@ -1,6 +1,7 @@
 package com.my.study.contion;
 
 
+import com.my.study.beanDefinition.BeanDefinitionTest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
@@ -25,5 +26,9 @@ public class Config {
 		System.out.println("给容器中添加linux.......");
 		return new User("linux",20);
 	}
-	
+
+	@Bean
+	public BeanDefinitionTest beanDefinitionTest124(){
+		return  new  BeanDefinitionTest();
+	}
 }
